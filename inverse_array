@@ -1,0 +1,26 @@
+package lec_6;
+
+public class inverse_array {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] b= {2,3,1,0};
+		inverse(b);		
+
+	}
+	public static void inverse(int a[])
+	{
+		
+		int[] res=new int[a.length];
+		int i;
+		for(i=0;i<a.length;i++)
+		{
+			res[a[i]]=i;
+		}
+		for(int val:res)
+		{
+			System.out.println(val);
+		}
+	}
+
+}
